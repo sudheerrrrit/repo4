@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std ;
+int main()
+{
+    int arr[10] , n ;
+    cout << "enter the no. of  element in array ";
+    cin >> n ;
+    cout << "enter the element in the array .. ";
+    for(int i = 0 ;i < n ; i++)
+    {
+        cout << "enter the array"<<"["<<i<<"]" << "element ";
+        cin >> arr[i];
+    }
+    for(int i = 0 ;i < n ; i++)
+    {
+        
+        cout << arr[i];
+    }
+    cout << "enter the osition of the element to delete :";
+    int pos ;
+    cin >> pos ;
+    for(int i = pos -1 ; i < n -1 ; i++)
+    {
+        arr[i]=arr[i+1];
+    }
+    n--;
+    for(int i = 0 ; i < n ; i++)
+    {
+        cout << arr[i] << " ";
+    }
+
+}
